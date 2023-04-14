@@ -83,6 +83,10 @@ const app = express()
 
 app.use(express.json())
 
+app.get("/", function (req, res) {
+    res.send(data);
+  });
+
 //get hall details
 
 app.get("/hall/details",(req,res)=>{
